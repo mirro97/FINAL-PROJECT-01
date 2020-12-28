@@ -46,6 +46,29 @@ p {
   letter-spacing: -0.01em;
 }
 
+/* Landing CSS */
+.landing {
+  background-color: #fdded8;
+}
+
+.landing-content {
+  text-align: center;
+}
+
+.button-group a {
+  font-size: 15px;
+  line-height: 1.6;
+  font-weight: bold;
+  width: 140px;
+  height: 48px;
+}
+
+.button-group a:first-child {
+  background-color: #3040c4;
+  color: #fff;
+  margin-right: 8px;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   p {
