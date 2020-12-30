@@ -46,9 +46,44 @@ p {
   letter-spacing: -0.01em;
 }
 
+.make-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 48px;
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: -0.05em;
+  font-weight: 700;
+  border-radius: 2px;
+  background-color: #3040c4;
+  color: #fff;
+  transition: opacity 300ms ease-in-out;
+}
+
+.make-button:hover {
+  opacity: 0.5;
+}
+
+.make-button.inverted {
+  background-color: #fff;
+  color: #3040c4;
+}
+
 /* Landing CSS */
 .landing {
-  background-color: #fdded8;
+  text-align: center;
+  background-color: #dcebff;
+}
+
+.landing-content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .landing-title {
@@ -59,37 +94,53 @@ p {
   margin-bottom: 24px;
 }
 
-.landing-content {
-  padding: 154px 0;
-  text-align: center;
+.landing-description {
+  margin-bottom: 24px;
 }
 
-.button-group {
-  margin-top: 24px;
+.landing .button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.make-button {
-  display: inline-block;
-  font-size: 15px;
-  line-height: 1.6;
-  font-weight: bold;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  background-color: #3040c4;
-  color: #fff;
-}
-
-.inverted {
-  background-color: #fff;
-  color: #3040c4;
-  margin-left: 8.5px;
+.landing .button-group .make-button:first-child {
+  margin-right: 8.5px;
 }
 
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
+  /* Reset CSS */
   p {
     font-size: 22px;
     line-height: 1.454545;
+  }
+
+  /* Landing CSS */
+  .landing-content {
+    height: auto;
+    padding: 120px 0;
+  }
+
+  .landing-title {
+    font-size: 70px;
+    line-height: 1.02857;
+    margin-bottom: 32px;
+  }
+
+  .landing-description {
+    margin-bottom: 32px;
+  }
+
+  .make-button {
+    font-size: 18px;
+    line-height: 1.5555;
+    width: 160px;
+    height: 56px;
+  }
+
+  .landing .button-group .make-button:first-child {
+    margin-right: 16px;
   }
 }
 
