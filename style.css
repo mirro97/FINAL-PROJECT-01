@@ -199,6 +199,34 @@ p {
   transition: color 400ms ease-in-out;
 }
 
+/* Curriculum CSS */
+.curriculum .section-category {
+  color: #0189d1;
+}
+
+.curriculum .section-description {
+  margin-bottom: 32px;
+}
+
+.curriculum-img {
+  display: none;
+}
+
+.curriculum .make-button {
+  margin-bottom: 48px;
+}
+
+.curriculum-detail {
+  font-size: 15px;
+  line-height: 1.4666;
+  letter-spacing: -0.01em;
+  color: #2b292d;
+}
+
+.curriculum .row:last-child .col-12:first-child {
+  margin-bottom: 40px;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -281,6 +309,39 @@ p {
   .program-box strong {
     font-size: 20px;
     line-height: 1.2;
+  }
+
+  /* Curriculum CSS */
+  .curriculum .colr-12:first-child {
+    margin-bottom: 24px;
+  }
+
+  .curriculum .section-description {
+    margin-bottom: 72px;
+  }
+
+  .curriculum-img {
+    display: block;
+  }
+
+  .curriculum-img img {
+    display: block;
+    width: 100%;
+    max-width: 425px;
+    height: autos;
+  }
+
+  .curriculum-detail {
+    font-size: 18px;
+    line-height: 1.4444;
+  }
+
+  .curriculum-detail:first-child {
+    margin-right: 30px;
+  }
+
+  .curriculum .row:last-child .col-12:first-child {
+    margin-bottom: 40px;
   }
 }
 
