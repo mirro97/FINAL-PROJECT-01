@@ -485,6 +485,7 @@ p {
 
   .footer-menu-item {
     display: block;
+    margin-bottom: 0;
     margin-right: 16px;
   }
 }
