@@ -287,6 +287,26 @@ p {
   text-decoration-line: underline;
 }
 
+/* Footer CSS */
+.footer {
+  padding: 24px 0;
+}
+
+.footer-menu {
+  color: #807f81;
+  font-size: 14px;
+  line-height: 1.71428;
+  letter-spacing: -0.01em;
+}
+
+.footer-menu-item {
+  margin-bottom: 8px;
+}
+
+.footer-menu-item:last-child {
+  margin-bottom: 0;
+}
+
 /* >= 768px (Desktop) */
 @media screen and (min-width: 768px) {
   /* Reset CSS */
@@ -452,6 +472,20 @@ p {
   .subscription-form .notice {
     font-size: 14px;
     line-height: 1.71428;
+  }
+
+  /* Footer CSS */
+  .footer {
+    padding: 16px 0;
+  }
+
+  .footer-menu {
+    display: flex;
+  }
+
+  .footer-menu-item {
+    display: block;
+    margin-right: 16px;
   }
 }
 
